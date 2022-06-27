@@ -2,6 +2,10 @@
   background-color: var(--third-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  & .logo__text {
+    color: var(--accent-first-color);
+  }
 }
 
 .foot-container {
@@ -24,9 +28,6 @@
   margin-bottom: 20px;
 }
 
-.footer .logo__text {
-  color: var(--accent-first-color);
-}
 .adress__link {
   color: var(--primary-color);
 
@@ -42,11 +43,11 @@
   line-height: 1.71;
 
   transition: color 250ms var(--time-function);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-first-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-first-color);
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -74,11 +75,12 @@
   margin-left: 10px;
 
   border-radius: 50%;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.social__item--inverce:first-child {
-  margin-left: 0;
-}
 .social__link--web {
   display: flex;
   width: 100%;
@@ -91,15 +93,15 @@
   border-radius: 50%;
 
   transition: background-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-first-color);
+  }
 }
 
 .social__icon--fill {
   fill: var(--primary-color);
-}
-
-.social__link--web:hover,
-.social__link--web:focus {
-  background-color: var(--accent-first-color);
 }
 
 /* ----------------subscribe----------------- */
@@ -149,11 +151,11 @@
   background-color: var(--third-color);
 
   transition: border-color 250ms var(--time-function);
-}
 
-.subscribe__input:hover,
-.subscribe__input:focus {
-  border-color: var(--accent-first-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-first-color);
+  }
 }
 
 .subscribe-button {

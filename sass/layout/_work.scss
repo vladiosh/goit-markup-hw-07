@@ -3,12 +3,6 @@
   padding-bottom: 94px;
 }
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--second-color);
-}
-
 .work__title,
 .team__title,
 .clients__title {
@@ -30,6 +24,10 @@
 .work__item {
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
+
+  .work__list & {
+    position: relative;
+  }
 }
 
 .work__box {
@@ -50,8 +48,4 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
-
-.work__list.work__item {
-  position: relative;
 }

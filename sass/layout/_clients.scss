@@ -1,11 +1,11 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients__list {
-  display: flex;
-  justify-content: center;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .clients__item {
@@ -13,6 +13,10 @@
   margin-right: 30px;
   width: 170px;
   height: 92px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .clients__link {
@@ -26,23 +30,19 @@
   justify-content: center;
   align-items: center;
   transition: border 250ms var(--time-function);
-}
 
-.clients__item:last-child {
-  margin-right: 0px;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-first-color);
+  }
 }
 
 .clients__icon {
   fill: var(--background-soc-icon);
   transition: fill 250ms var(--time-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent-first-color);
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: var(--accent-first-color);
+  .clients__link:hover .&,
+  .clients__link:focus .& {
+    fill: var(--accent-first-color);
+  }
 }
